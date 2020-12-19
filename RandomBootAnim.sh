@@ -26,6 +26,9 @@ else
   fi
 fi
 
+# Fix permissions
+chmod 0644 ${SYSMEDIAPATH}/bootanimation.zip
+
 # Remount system read-only
 echo "Remounting system (ro) again...."
 mount -o ro,remount /system
